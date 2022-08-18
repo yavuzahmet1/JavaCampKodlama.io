@@ -1,8 +1,8 @@
-package entities.concretes;
+package entities;
 
-import entities.abstracts.Entity;
+import abstracts.IEntity;
 
-public class Customer implements Entity {
+public class Customer implements IEntity {
 	private String name;
 	private String surname;
 	private String nationaltyId;
