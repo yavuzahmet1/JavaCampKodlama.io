@@ -2,7 +2,7 @@ package abstracts;
 
 import entities.Customer;
 
-public abstract class BaseCustomerManager implements CustomerManager {
+public abstract class BaseCustomerManager implements ICustomerManager {
 	@Override
 	public void add(Customer customer) {
 

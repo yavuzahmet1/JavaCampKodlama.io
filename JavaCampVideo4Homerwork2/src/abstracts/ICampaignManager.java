@@ -2,7 +2,7 @@ package abstracts;
 
 import entities.Campaign;
 
-public interface CampaignManager {
+public interface ICampaignManager {
 	void newCampaign(Campaign campaign);
 
 	void delete(Campaign campaign);
