@@ -7,19 +7,18 @@ public class CampaignManger implements ICampaignManager {
 
 	@Override
 	public void newCampaign(Campaign campaign) {
-		// TODO Auto-generated method stub
-
+		System.out.println("Yeni kampanya giriþi yapýldý : " + campaign.getNameOfCompaingn());
 	}
 
 	@Override
 	public void delete(Campaign campaign) {
-		// TODO Auto-generated method stub
+		System.out.println(campaign.getNameOfCompaingn() + " silindi.");
 
 	}
 
 	@Override
 	public void update(Campaign campaign) {
-		// TODO Auto-generated method stub
+		System.out.println(campaign.getNameOfCompaingn() + " bilgiler güncellenmiþtir.");
 
 	}
 

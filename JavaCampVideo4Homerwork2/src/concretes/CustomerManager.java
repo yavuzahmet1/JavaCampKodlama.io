@@ -7,19 +7,19 @@ public class CustomerManager implements ICustomerManager {
 
 	@Override
 	public void add(Customer customer) {
-		// TODO Auto-generated method stub
+		System.out.println(customer.getName() + " " + customer.getSurname() + " kayýt edildi.");
 
 	}
 
 	@Override
 	public void delete(Customer customer) {
-		// TODO Auto-generated method stub
+		System.out.println(customer.getName() + " " + customer.getSurname() + " silindi");
 
 	}
 
 	@Override
 	public void update(Customer customer) {
-		// TODO Auto-generated method stub
+		System.out.println(customer.getName() + " " + customer.getSurname() + " güncellendi.");
 
 	}
 
