@@ -15,13 +15,13 @@ public class AbcProductDao implements ProductDao {
 
 	@Override
 	public void update(Product product) {
-		// TODO Auto-generated method stub
+		System.out.println("Abc ile güncellendi : " + product.getName());
 
 	}
 
 	@Override
 	public void delete(Product product) {
-		// TODO Auto-generated method stub
+		System.out.println("Abc ile silindi : " + product.getName());
 
 	}
 
