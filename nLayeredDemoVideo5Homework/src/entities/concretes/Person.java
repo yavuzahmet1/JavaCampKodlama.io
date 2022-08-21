@@ -1,6 +1,8 @@
 package entities.concretes;
 
-public class Person {
+import entities.abstracts.Entity;
+
+public class Person implements Entity {
 	private String name;
 	private String surname;
 	private String email;
