@@ -22,6 +22,8 @@ public class Main {
 		personService.add(person2);
 		personService.add(person);
 
+		System.out.println(personService.getAll());
+
 	}
 
 }

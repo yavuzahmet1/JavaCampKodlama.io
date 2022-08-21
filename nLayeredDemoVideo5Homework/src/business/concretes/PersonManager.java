@@ -38,7 +38,7 @@ public class PersonManager implements PersonService {
 
 	@Override
 	public List<Person> getAll() {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 
