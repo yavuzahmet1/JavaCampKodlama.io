@@ -31,6 +31,7 @@ public class ProductsController {
 	@GetMapping("/getAll") // şimdi veri istediğimizde bu anatasyon kullanılır. yani
 							// kodlama.io/api/pruducts/getAll denirse bu metod çalışacak
 	public List<Product> getAll() {
+
 		return productService.getAll();
 
 	}

@@ -16,14 +16,12 @@ public class ProductManager implements ProductService {
 	@Autowired // spring arka planda productDaonun instance sınıfı üretir, bağımlılık
 				// oluşturur.
 	public ProductManager(ProductDao productDao) {
-		//
 		super();
 		this.productDao = productDao;
 	}
 
 	@Override
 	public List<Product> getAll() {
-		// TODO Auto-generated method stub
 		return productDao.findAll();
 	}
 
