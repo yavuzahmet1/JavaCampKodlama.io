@@ -12,4 +12,8 @@ public interface ProductDao extends JpaRepository<Product, Integer> {
 	// hazırlayalım
 	// primaryKey'im de integer olduğundan nesne Product,primaryKey Integer
 	// belirtilir.
+
+	// güncelleme ekleme silme işlemleri de yapılacak
+	// bunun için businnes içinde ProductService işlemine gerekli düzenlemeler
+	// yapılır.
 }

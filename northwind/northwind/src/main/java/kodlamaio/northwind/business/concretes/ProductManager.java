@@ -7,7 +7,9 @@ import org.springframework.stereotype.Service;
 
 import kodlamaio.northwind.business.abstracts.ProductService;
 import kodlamaio.northwind.core.utilities.results.DataResult;
+import kodlamaio.northwind.core.utilities.results.Result;
 import kodlamaio.northwind.core.utilities.results.SuccessDataResult;
+import kodlamaio.northwind.core.utilities.results.SuccessResult;
 import kodlamaio.northwind.dataAccess.abstracts.ProductDao;
 import kodlamaio.northwind.entities.concretes.Product;
 
@@ -28,6 +30,24 @@ public class ProductManager implements ProductService {
 
 		return new SuccessDataResult<List<Product>>(productDao.findAll(), "Data listed");
 
+	}
+
+	@Override
+	public Result add(Product product) {
+		productDao.save(product);
+		return new SuccessResult("Product added");
+	}
+
+	@Override
+	public Result delete(Product product) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Result update(Product product) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
