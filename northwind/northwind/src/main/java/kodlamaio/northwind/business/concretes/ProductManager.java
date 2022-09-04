@@ -11,6 +11,7 @@ import kodlamaio.northwind.entities.concretes.Product;
 
 @Service // bu class, bu projenin, servisi olarak göreceğini belirten anatasyon
 public class ProductManager implements ProductService {
+
 	private ProductDao productDao;// productDao injection yapıldı
 
 	@Autowired // spring arka planda productDaonun instance sınıfı üretir, bağımlılık
@@ -22,6 +23,7 @@ public class ProductManager implements ProductService {
 
 	@Override
 	public List<Product> getAll() {
+
 		return productDao.findAll();
 	}
 

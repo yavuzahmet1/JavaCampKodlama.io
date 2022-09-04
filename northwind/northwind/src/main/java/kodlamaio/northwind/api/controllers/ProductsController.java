@@ -19,7 +19,7 @@ public class ProductsController {
 
 	private ProductService productService;
 
-	@Autowired // giyor bana ProductServis'i arıyor kim implements etmiş ona bakıyor(burda
+	@Autowired // geziyor bana ProductServis'i arıyor kim implements etmiş ona bakıyor(burda
 				// ProductManager) ve bu benim yerime new'leyip (arka planda ProductManager
 				// productManager=new ProductManager(); yapıyor) neplenmiş productManager'i
 				// buraya yerleştiriyor. bu IOC yöntemiyle yapmış oluyor.

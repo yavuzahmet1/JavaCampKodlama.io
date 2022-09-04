@@ -10,7 +10,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
-@EnableSwagger2
+@EnableSwagger2 // swageri başlatan anatasyon
 public class NorthwindApplication {
 
 	public static void main(String[] args) {
