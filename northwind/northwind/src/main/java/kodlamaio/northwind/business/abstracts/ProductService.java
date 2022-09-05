@@ -11,8 +11,4 @@ public interface ProductService {
 
 	Result add(Product product);
 
-	Result delete(Product product);
-
-	Result update(Product product);
-
 }

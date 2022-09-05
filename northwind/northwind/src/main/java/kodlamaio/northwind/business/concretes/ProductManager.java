@@ -38,16 +38,4 @@ public class ProductManager implements ProductService {
 		return new SuccessResult("Product added");
 	}
 
-	@Override
-	public Result delete(Product product) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Result update(Product product) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 }
