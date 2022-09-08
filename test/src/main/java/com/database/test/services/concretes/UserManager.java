@@ -1,17 +1,16 @@
-package com.kodlamaio.HRMS.bussines.concretes;
+package com.database.test.services.concretes;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.kodlamaio.HRMS.bussines.abstracts.UserService;
-import com.kodlamaio.HRMS.dataAccess.concretes.UserDao;
-import com.kodlamaio.HRMS.entities.concretes.User;
+import com.database.test.dataAccess.UserDao;
+import com.database.test.entities.User;
+import com.database.test.services.abstracts.UserService;
 
 @Service
 public class UserManager implements UserService {
-
 	private UserDao userDao;
 
 	@Autowired
@@ -20,10 +19,6 @@ public class UserManager implements UserService {
 		this.userDao = userDao;
 	}
 
-	/*
-	 * @Override public User getUserById(int id) { // TODO Auto-generated method
-	 * stub return null; }
-	 */
 	@Override
 	public List<User> getAll() {
 

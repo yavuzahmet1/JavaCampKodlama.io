@@ -1,4 +1,4 @@
-package com.kodlamaio.HRMS.entities.concretes;
+package com.database.test.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "users")
+	@Column(name = "id")
 	private int id;
 
 	@Column(name = "email")
@@ -27,5 +27,4 @@ public class User {
 
 	@Column(name = "password")
 	private String password;
-
 }
