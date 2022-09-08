@@ -16,6 +16,7 @@ public class UserManager implements UserService {
 
 	@Autowired
 	public UserManager(UserDao userDao) {
+		super();
 		this.userDao = userDao;
 	}
 
