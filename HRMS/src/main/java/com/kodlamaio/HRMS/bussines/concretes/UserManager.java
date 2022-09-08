@@ -27,7 +27,7 @@ public class UserManager implements UserService {
 	@Override
 	public List<User> getAll() {
 		// TODO Auto-generated method stub
-		return null;
+		return userDao.findAll();
 	}
 
 }
