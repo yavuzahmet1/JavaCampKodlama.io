@@ -1,8 +1,11 @@
 package com.kodlamaio.HRMS.bussines.abstracts;
 
+import java.util.List;
+
 import com.kodlamaio.HRMS.entities.concretes.User;
 
 public interface UserService {
-	User getUserById(int id);
+
+	List<User> getAll();
 
 }
