@@ -10,7 +10,7 @@ import com.database.test.entities.User;
 import com.database.test.services.abstracts.UserService;
 
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping(path = "/api/users")
 public class UserController {
 	private UserService userService;
 
@@ -19,7 +19,7 @@ public class UserController {
 		this.userService = userService;
 	}
 
-	@GetMapping("/getAll")
+	@GetMapping(path = "/getAll")
 	public List<User> getAll() {
 		return userService.getAll();
 	}
