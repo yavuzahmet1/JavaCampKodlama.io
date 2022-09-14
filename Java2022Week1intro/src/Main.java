@@ -33,9 +33,9 @@ public class Main {
 
 		String[] krediler = { "Kamu Kredisi", "Hýzlý Kredi", "Mutlu Emekli Kredisi" };
 
-		System.out.println(krediler[0]);
-		System.out.println(krediler[1]);
-		System.out.println(krediler[2]);
+		for (int i = 0; i < krediler.length; i++) {
+			System.out.println(krediler[i]);
+		}
 
 	}
 
