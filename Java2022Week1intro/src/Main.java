@@ -12,9 +12,30 @@ public class Main {
 		int vade = (int) 1.2;
 		System.out.println(vade);
 
-		double dolarDun = 18.14;
+		double dolarDun = 18.20;
+		double dolarBugun = 18.20;
 
 		boolean dolarDustuMu = false;
+
+		String okYonu = "";
+
+		if (dolarBugun < dolarDun) {
+			okYonu = "down.svg";
+			System.out.println(okYonu);
+
+		} else if (dolarBugun > dolarDun) {
+			okYonu = "up.svg";
+			System.out.println(okYonu);
+		} else {
+			okYonu = "equal.svg";
+			System.out.println(okYonu);
+		}
+
+		String[] krediler = { "Kamu Kredisi", "Hýzlý Kredi", "Mutlu Emekli Kredisi" };
+
+		System.out.println(krediler[0]);
+		System.out.println(krediler[1]);
+		System.out.println(krediler[2]);
 
 	}
 
