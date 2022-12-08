@@ -1,4 +1,9 @@
 package com.hrms.demo.entity;
 
-public class User {
+import javax.persistence.Entity;
+
+@Entity
+public abstract class User {
+    private String email;
+    private String password;
 }
