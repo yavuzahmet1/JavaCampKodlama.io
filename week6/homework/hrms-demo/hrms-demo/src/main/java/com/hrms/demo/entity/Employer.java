@@ -1,9 +1,10 @@
 package com.hrms.demo.entity;
 
-public class Employer {
+import javax.persistence.Entity;
+
+@Entity
+public class Employer extends User{
     private String companyName;
     private String webAddress;
     private String telephoneNumber;
-    private String email;
-    private String password;
 }
