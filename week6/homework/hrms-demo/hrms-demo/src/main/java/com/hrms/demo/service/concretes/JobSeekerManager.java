@@ -20,6 +20,13 @@ public class JobSeekerManager implements JobSeekerService {
 
     @Override
     public JobSeeker add(JobSeeker jobSeeker) {
+        isNull(jobSeeker);
         return jobSeekerRepository.save(jobSeeker);
+    }
+
+    public void isNull(JobSeeker jobSeeker) {
+        if (jobSeeker.getName().isEmpty() || jobSeeker.getLastName().isEmpty() || jobSeeker.getIdentityNumber().isBlank() || jobSeeker.getBirthOfYear() == 0) {
+            System.out.println("Please all area are fill!!!");
+        }
     }
 }
