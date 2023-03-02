@@ -1,10 +1,12 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import Dashboard from './layouts/Dashboard'
+import 'semantic-ui-css/semantic.min.css'
 
 function App() {
   return (
     <div className="App">
- 
+        <Dashboard/>
     </div>
   );
 }
@@ -15,7 +17,7 @@ export default App;
 /*     <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> Esma and Ahmet and save to reload.
+          Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
