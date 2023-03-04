@@ -4,12 +4,12 @@ import ProductService from '../layouts/ProductServices';
 
 export default function ProductList() {
 
-  const [products, setProducts] = useState([]);
+  const [brands, setBrands] = useState([]);
 
   useEffect(() => {
     let productService=new ProductService()
   
-    productService.getProducts().then(result=>setProducts(result.data.data))
+    productService.getProducts().then(result=>setBrands(result.data.data))
   
   })
   
@@ -23,9 +23,9 @@ export default function ProductList() {
         </Table.Header>
 
         <Table.Body>
-          {products.map((product) => (
+          {brands.map((brand) => (
               <Table.Row key={0}>
-              <Table.Cell>{product.name}</Table.Cell>
+              <Table.Cell>{brand.name}</Table.Cell>
             </Table.Row>
             ))}
         </Table.Body>
