@@ -6,15 +6,21 @@ export default function Category() {
         <div>
             <Menu pointing vertical>
         <Menu.Item
-          name='home'
+          name='Home'
 
         />
         <Menu.Item
-          name='messages'
+          name='Brands'
 
         />
         <Menu.Item
-          name='friends'
+          name='Cars'
+          
+
+        />
+        <Menu.Item
+          name='Models'
+          
 
         />
       </Menu>

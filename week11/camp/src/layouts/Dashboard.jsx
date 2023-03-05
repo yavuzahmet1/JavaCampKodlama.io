@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductList from '../pages/ProductList'
+import ProductList from '../pages/BrandList'
 import Category from './Category'
 //import Navi from './Navi'
 //import { Button, Icon, Label } from 'semantic-ui-react'

@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { Icon, Menu, Table } from 'semantic-ui-react'
-import ProductService from '../layouts/ProductServices';
+import BrandService from '../layouts/BrandServices';
 
-export default function ProductList() {
+export default function BrandList() {
 
   const [brands, setBrands] = useState([]);
 
   useEffect(() => {
-    let productService=new ProductService()
+
+    let brandService=new BrandService()
   
-    productService.getProducts().then(result=>setBrands(result.data.data))
+    brandService.getBrands().then(result=>setBrands(result.data))
   
   })
   
@@ -19,13 +20,15 @@ export default function ProductList() {
         <Table.Header>
           <Table.Row>
             <Table.HeaderCell>Name</Table.HeaderCell>
+            <Table.HeaderCell>Models</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
-
         <Table.Body>
           {brands.map((brand) => (
-              <Table.Row key={0}>
+              <Table.Row key={4}>
+
               <Table.Cell>{brand.name}</Table.Cell>
+              <Table.Cell>{brand.brandName}</Table.Cell>
             </Table.Row>
             ))}
         </Table.Body>
