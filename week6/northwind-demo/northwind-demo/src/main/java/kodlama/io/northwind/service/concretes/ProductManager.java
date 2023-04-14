@@ -28,8 +28,4 @@ public class ProductManager implements ProductService {
         return null;
     }
 
-    /*@Override
-    public Product getById(int id) {
-        return null;//productRepository.findById(id);
-    }*/
 }
