@@ -15,12 +15,9 @@ import java.util.List;
 public class ProductsController {
     private final ProductService productService;
 
-    @GetMapping
-    public List<Product> getAll(){
+    @GetMapping("/getallproducts")
+    public List<Product> getAllProducts(){
         return productService.getAll();
     }
-   /* @GetMapping
-    public Product getById(int id){
-        return productService.getById(id);
-    }*/
+
 }
